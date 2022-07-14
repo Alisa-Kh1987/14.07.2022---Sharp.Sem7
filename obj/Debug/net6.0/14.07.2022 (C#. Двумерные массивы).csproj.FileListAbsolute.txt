@@ -1,0 +1,15 @@
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\bin\Debug\net6.0\14.07.2022 (C#. Двумерные массивы).exe
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\bin\Debug\net6.0\14.07.2022 (C#. Двумерные массивы).deps.json
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\bin\Debug\net6.0\14.07.2022 (C#. Двумерные массивы).runtimeconfig.json
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\bin\Debug\net6.0\14.07.2022 (C#. Двумерные массивы).dll
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\bin\Debug\net6.0\14.07.2022 (C#. Двумерные массивы).pdb
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\obj\Debug\net6.0\14.07.2022 (C#. Двумерные массивы).csproj.AssemblyReference.cache
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\obj\Debug\net6.0\14.07.2022 (C#. Двумерные массивы).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\obj\Debug\net6.0\14.07.2022 (C#. Двумерные массивы).AssemblyInfoInputs.cache
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\obj\Debug\net6.0\14.07.2022 (C#. Двумерные массивы).AssemblyInfo.cs
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\obj\Debug\net6.0\14.07.2022 (C#. Двумерные массивы).csproj.CoreCompileInputs.cache
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\obj\Debug\net6.0\14.07.2022 (C#. Двумерные массивы).dll
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\obj\Debug\net6.0\refint\14.07.2022 (C#. Двумерные массивы).dll
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\obj\Debug\net6.0\14.07.2022 (C#. Двумерные массивы).pdb
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\obj\Debug\net6.0\14.07.2022 (C#. Двумерные массивы).genruntimeconfig.cache
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\obj\Debug\net6.0\ref\14.07.2022 (C#. Двумерные массивы).dll
