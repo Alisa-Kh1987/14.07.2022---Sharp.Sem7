@@ -72,7 +72,7 @@ int columns=Convert.ToInt32(Console.ReadLine());
 
 int[,] array = GetArray(rows, columns);
 PrintArray(array);
-*/
+
 
 //49
 
@@ -121,7 +121,8 @@ for (int i = 0; i < rows; i = i + 2)
     
     
 PrintArray(array);
-/*
+*/
+
 //51
 int[,] GetArray(int m, int n, int minValue, int maxValue) // создает двумерный массив
 {
@@ -164,4 +165,9 @@ Console.Write("Введите количество строк массива: ")
 int rows=Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Введите количество столбцов массива: ");
-*/
+int columns = Convert.ToInt32(Console.ReadLine());
+
+int[,] array = GetArray(rows, columns, 2, 10);
+PrintArray(array);
+Console.WriteLine("----------------------- ");
+
