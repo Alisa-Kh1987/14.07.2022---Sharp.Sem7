@@ -1,5 +1,6 @@
-﻿//адача 46: Задайте двумерный массив размером m×n, заполненный случайными целыми числами.
-/*
+﻿/*
+//Задача 46: Задайте двумерный массив размером m×n, заполненный случайными целыми числами.
+
 Console.Clear();
 
 int[,] GetArray(int m, int n, int minValue, int maxValue)
@@ -121,7 +122,7 @@ for (int i = 0; i < rows; i = i + 2)
     
     
 PrintArray(array);
-*/
+
 
 //51
 int[,] GetArray(int m, int n, int minValue, int maxValue) // создает двумерный массив
@@ -137,18 +138,7 @@ int[,] GetArray(int m, int n, int minValue, int maxValue) // создает дв
     return result;
     
 }
-int GetSum (int [,] array) 
-{   int sum=0;
 
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            if(i==j) sum=sum+array[i,j];
-        }
-    }
-    return sum;
-} 
 void PrintArray(int[,] inArray) // вывводит двумерный массив
 {
     for (int row = 0; row < inArray.GetLength(0); row++)
@@ -169,5 +159,17 @@ int columns = Convert.ToInt32(Console.ReadLine());
 
 int[,] array = GetArray(rows, columns, 2, 10);
 PrintArray(array);
-Console.WriteLine("----------------------- ");
 
+   int sum=0;
+
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            if(i==j) sum=sum+array[i,j];
+        }
+    }
+    return sum;
+
+Console.WriteLine(sum);
+*/
