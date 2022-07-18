@@ -1,0 +1,15 @@
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\HomeWork(Seminar7, 14.07.2022)\bin\Debug\net6.0\HomeWork(Seminar7, 14.07.2022).exe
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\HomeWork(Seminar7, 14.07.2022)\bin\Debug\net6.0\HomeWork(Seminar7, 14.07.2022).deps.json
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\HomeWork(Seminar7, 14.07.2022)\bin\Debug\net6.0\HomeWork(Seminar7, 14.07.2022).runtimeconfig.json
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\HomeWork(Seminar7, 14.07.2022)\bin\Debug\net6.0\HomeWork(Seminar7, 14.07.2022).dll
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\HomeWork(Seminar7, 14.07.2022)\bin\Debug\net6.0\HomeWork(Seminar7, 14.07.2022).pdb
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\HomeWork(Seminar7, 14.07.2022)\obj\Debug\net6.0\HomeWork(Seminar7, 14.07.2022).csproj.AssemblyReference.cache
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\HomeWork(Seminar7, 14.07.2022)\obj\Debug\net6.0\HomeWork(Seminar7, 14.07.2022).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\HomeWork(Seminar7, 14.07.2022)\obj\Debug\net6.0\HomeWork(Seminar7, 14.07.2022).AssemblyInfoInputs.cache
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\HomeWork(Seminar7, 14.07.2022)\obj\Debug\net6.0\HomeWork(Seminar7, 14.07.2022).AssemblyInfo.cs
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\HomeWork(Seminar7, 14.07.2022)\obj\Debug\net6.0\HomeWork(Seminar7, 14.07.2022).csproj.CoreCompileInputs.cache
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\HomeWork(Seminar7, 14.07.2022)\obj\Debug\net6.0\HomeWork(Seminar7, 14.07.2022).dll
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\HomeWork(Seminar7, 14.07.2022)\obj\Debug\net6.0\refint\HomeWork(Seminar7, 14.07.2022).dll
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\HomeWork(Seminar7, 14.07.2022)\obj\Debug\net6.0\HomeWork(Seminar7, 14.07.2022).pdb
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\HomeWork(Seminar7, 14.07.2022)\obj\Debug\net6.0\HomeWork(Seminar7, 14.07.2022).genruntimeconfig.cache
+C:\Users\Алиса\Desktop\14.07.2022 (C#. Двумерные массивы)\HomeWork(Seminar7, 14.07.2022)\obj\Debug\net6.0\ref\HomeWork(Seminar7, 14.07.2022).dll
