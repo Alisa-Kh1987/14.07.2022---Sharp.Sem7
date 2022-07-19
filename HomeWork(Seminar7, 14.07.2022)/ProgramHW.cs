@@ -36,7 +36,7 @@ int columns=Convert.ToInt32(Console.ReadLine());
 
 double[,] array = GetArray(rows, columns, 1, 7);
 PrintArray(array);
-*/
+
 
 //Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
 
@@ -73,7 +73,23 @@ int rows=Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите количество столбцов массива: ");
 int columns=Convert.ToInt32(Console.ReadLine());
 
-int[,] array = GetArray(rows, columns, 1, 50);
+Console.Write("Введите индекс строки элемента массива: ");
+int a = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите индекс столбца элемента массива: ");
+int b = Convert.ToInt32(Console.ReadLine());
+
+int[,] array = GetArray(rows, columns, 0, 50);
 PrintArray(array);
+
+if (a< rows && b< columns){
+    int N = array[a,b];
+    Console.WriteLine($"Значение запрашиваемого элемента: {N}");
+}
+else {
+    Console.WriteLine("Такой элемент отсутствует");
+}
+*/
+
 
 
