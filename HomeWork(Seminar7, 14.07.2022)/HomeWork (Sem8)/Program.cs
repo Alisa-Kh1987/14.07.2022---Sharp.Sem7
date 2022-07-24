@@ -189,27 +189,27 @@ int columns2 = Convert.ToInt32(Console.ReadLine());
 int[,] array2 = GetArray2(rows2, columns2, 0, 9);
 PrintArray2(array2);
 
-if (rows!=columns2)
+void GetMultiplicationMatrix(int[,] array, int[,] array2)
 {
-    Console.WriteLine("Матрицы умножать нельзя");
-}
-
-void GetMultiplicationMatrix(int[,]array, int[,]array2)
-{
-    int[,] array3 = new int [array.GetLength(0), array2.GetLength(1)];
-    for (int i=0; i<array.GetLength(0);i++)
+    if (rows != columns2)
     {
-        for (int j=0; j<array2.GetLength(1);j++)
+        Console.WriteLine("Матрицы умножать нельзя");
+    }
+
+    int[,] array3 = new int[array.GetLength(0), array2.GetLength(1)];
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array2.GetLength(1); j++)
         {
             //k - отвечает за количество столбцов (*на разборе ДЗ упомянуто строк) первого массива
-            for (int k=0; k<array.GetLength(1);k++)
+            for (int k = 0; k < array.GetLength(1); k++)
             {
-                array3[i,j] = array[i,k]*array2[k,j];
+                array3[i, j] = array[i, k] * array2[k, j];
             }
         }
     }
-PrintArray(array3);
+    PrintArray(array3);
 }
 Console.WriteLine("----------");
-GetMultiplicationMatrix(array,array2);
+GetMultiplicationMatrix(array, array2);
 */
