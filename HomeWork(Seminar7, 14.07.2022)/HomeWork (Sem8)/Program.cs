@@ -118,7 +118,7 @@ int GetRowNumbers(int[,] array)
     return row;
 }
 Console.WriteLine($"Индекс строки с наименьшей суммой элементов: {GetRowNumbers(array)}");
-
+*/
 
 //Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 int[,] GetArray(int m, int n, int minValue, int maxValue)
@@ -210,6 +210,5 @@ void GetMultiplicationMatrix(int[,] array, int[,] array2)
     }
     PrintArray(array3);
 }
-Console.WriteLine("----------");
+
 GetMultiplicationMatrix(array, array2);
-*/
