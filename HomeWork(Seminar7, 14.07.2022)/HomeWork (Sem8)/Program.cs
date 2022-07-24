@@ -54,7 +54,7 @@ void SortArray(int[,] inArray)
     PrintArray (inArray);
  }
 SortArray(array);
-*/
+
 
 //Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 
@@ -118,3 +118,98 @@ int GetRowNumbers(int[,] array)
     return row;
 }
 Console.WriteLine($"Индекс строки с наименьшей суммой элементов: {GetRowNumbers(array)}");
+
+
+//Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
+int[,] GetArray(int m, int n, int minValue, int maxValue)
+{
+    int[,] result = new int[m, n];
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            result[i, j] = new Random().Next(minValue, maxValue + 1);
+        }
+    }
+    return result;
+}
+
+void PrintArray(int[,] inArray)
+{
+    for (int row = 0; row < inArray.GetLength(0); row++)
+    {
+        for (int column = 0; column < inArray.GetLength(1); column++)
+        {
+            Console.Write($"{inArray[row, column]}     ");
+        }
+        Console.WriteLine();
+    }
+}
+
+Console.Write("Введите количество строк первого массива: ");
+int rows = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите количество столбцов первого массива: ");
+int columns = Convert.ToInt32(Console.ReadLine());
+
+int[,] array = GetArray(rows, columns, 1, 9);
+PrintArray(array);
+
+int[,] GetArray2(int m, int n, int minValue, int maxValue)
+{
+    int[,] result = new int[m, n];
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            result[i, j] = new Random().Next(minValue, maxValue + 1);
+        }
+    }
+    return result;
+}
+
+void PrintArray2(int[,] inArray2)
+{
+    for (int row = 0; row < inArray2.GetLength(0); row++)
+    {
+        for (int column = 0; column < inArray2.GetLength(1); column++)
+        {
+            Console.Write($"{inArray2[row, column]}     ");
+        }
+        Console.WriteLine();
+    }
+}
+
+Console.Write("Введите количество строк второго массива: ");
+int rows2 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите количество столбцов второго массива: ");
+int columns2 = Convert.ToInt32(Console.ReadLine());
+
+int[,] array2 = GetArray2(rows2, columns2, 0, 9);
+PrintArray2(array2);
+
+if (rows!=columns2)
+{
+    Console.WriteLine("Матрицы умножать нельзя");
+}
+
+void GetMultiplicationMatrix(int[,]array, int[,]array2)
+{
+    int[,] array3 = new int [array.GetLength(0), array2.GetLength(1)];
+    for (int i=0; i<array.GetLength(0);i++)
+    {
+        for (int j=0; j<array2.GetLength(1);j++)
+        {
+            //k - отвечает за количество столбцов (*на разборе ДЗ упомянуто строк) первого массива
+            for (int k=0; k<array.GetLength(1);k++)
+            {
+                array3[i,j] = array[i,k]*array2[k,j];
+            }
+        }
+    }
+PrintArray(array3);
+}
+Console.WriteLine("----------");
+GetMultiplicationMatrix(array,array2);
+*/
