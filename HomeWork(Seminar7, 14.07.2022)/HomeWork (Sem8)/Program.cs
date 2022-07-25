@@ -121,6 +121,8 @@ Console.WriteLine($"Индекс строки с наименьшей суммо
 
 
 //Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
+Console.Clear();
+
 int[,] GetArray(int m, int n, int minValue, int maxValue)
 {
     int[,] result = new int[m, n];
@@ -147,69 +149,103 @@ void PrintArray(int[,] inArray)
 }
 
 Console.Write("Введите количество строк первого массива: ");
-int rows = Convert.ToInt32(Console.ReadLine());
+int rowsA = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Введите количество столбцов первого массива: ");
-int columns = Convert.ToInt32(Console.ReadLine());
+int columnsA = Convert.ToInt32(Console.ReadLine());
 
-int[,] array = GetArray(rows, columns, 1, 9);
-PrintArray(array);
+int[,] arrayА = GetArray(rowsA, columnsA, 1, 9);
+PrintArray(arrayА);
 
-int[,] GetArray2(int m, int n, int minValue, int maxValue)
+Console.Write("Введите количество строк второго массива: ");
+int rowsB = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите количество столбцов второго массива: ");
+int columnsB = Convert.ToInt32(Console.ReadLine());
+
+int[,] arrayB = GetArray(rowsB, columnsB, 0, 9);
+PrintArray(arrayB);
+
+int GetMultiplicationMatrix(int[,] arrayA, int[,] arrayB)
+{
+    if (rowsA != columnsB)
+    {
+        Console.WriteLine("Матрицы умножать нельзя");
+    }
+
+    int[,] arrayC = new int[arrayA.GetLength(0), arrayB.GetLength(1)];
+    for (int i = 0; i < arrayA.GetLength(0); i++)
+    {
+        for (int j = 0; j < arrayB.GetLength(1); j++)
+        {
+            for (int k = 0; k < arrayA.GetLength(1); k++)
+            {
+                arrayC[i, j] += arrayA[i, k] * arrayB[k, j];
+            }
+        }
+    }
+    return arrayC;
+}
+*/
+Console.Write("Введите количество строк 1 массива: ");
+int rowsA = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите количество столбцов 1 массива: ");
+int columnsA = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите количество строк 2 массива: ");
+int rowsB = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите количество столбцов 2 массива: ");
+int columnsB = Convert.ToInt32(Console.ReadLine());
+if (columnsA != rowsB)
+{
+    Console.WriteLine("Такие матрицы умножать нельзя!");
+    return;
+}
+int[,] A = GetArray(rowsA, columnsA, 0, 10);
+int[,] B = GetArray(rowsB, columnsB, 0, 10);
+PrintArray(A);
+Console.WriteLine();
+PrintArray(B);
+Console.WriteLine();
+PrintArray(GetMultiplicationMatrix(A, B));
+
+int[,] GetArray(int m, int n, int min, int max)
 {
     int[,] result = new int[m, n];
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            result[i, j] = new Random().Next(minValue, maxValue + 1);
+            result[i, j] = new Random().Next(min, max + 1);
         }
+
     }
     return result;
 }
 
-void PrintArray2(int[,] inArray2)
+void PrintArray(int[,] inArray)
 {
-    for (int row = 0; row < inArray2.GetLength(0); row++)
+    for (int i = 0; i < inArray.GetLength(0); i++)
     {
-        for (int column = 0; column < inArray2.GetLength(1); column++)
+        for (int j = 0; j < inArray.GetLength(1); j++)
         {
-            Console.Write($"{inArray2[row, column]}     ");
+            Console.Write($"{inArray[i, j]} ");
         }
         Console.WriteLine();
     }
 }
 
-Console.Write("Введите количество строк второго массива: ");
-int rows2 = Convert.ToInt32(Console.ReadLine());
-
-Console.Write("Введите количество столбцов второго массива: ");
-int columns2 = Convert.ToInt32(Console.ReadLine());
-
-int[,] array2 = GetArray2(rows2, columns2, 0, 9);
-PrintArray2(array2);
-
-void GetMultiplicationMatrix(int[,] array, int[,] array2)
+int[,] GetMultiplicationMatrix(int[,] arrayA, int[,] arrayB)
 {
-    if (rows != columns2)
+    int[,] arrayC = new int[arrayA.GetLength(0), arrayB.GetLength(1)];
+    for (int i = 0; i < arrayA.GetLength(0); i++)
     {
-        Console.WriteLine("Матрицы умножать нельзя");
-    }
-
-    int[,] array3 = new int[array.GetLength(0), array2.GetLength(1)];
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array2.GetLength(1); j++)
+        for (int j = 0; j < arrayB.GetLength(1); j++)
         {
-            //k - отвечает за количество столбцов (*на разборе ДЗ упомянуто строк) первого массива
-            for (int k = 0; k < array.GetLength(1); k++)
+            for (int k = 0; k < arrayA.GetLength(1); k++)
             {
-                array3[i, j] = array[i, k] * array2[k, j];
+                arrayC[i, j] += arrayA[i, k] * arrayB[k, j];
             }
         }
     }
-    PrintArray(array3);
+    return arrayC;
 }
-
-GetMultiplicationMatrix(array, array2);
-*/
