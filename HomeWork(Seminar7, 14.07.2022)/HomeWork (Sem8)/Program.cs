@@ -19,15 +19,15 @@ void PrintArray(int[,] inArray)
     {
         for (int j = 0; j < inArray.GetLength(1); j++)
         {
-            Console.Write($"{inArray[i,j]} ");
+            Console.Write($"{inArray[i, j]} ");
         }
         Console.WriteLine();
     }
 }
 Console.Write("Введите количество строк массива: ");
-int rows=Convert.ToInt32(Console.ReadLine());
+int rows = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите количество столбцов массива: ");
-int columns=Convert.ToInt32(Console.ReadLine());
+int columns = Convert.ToInt32(Console.ReadLine());
 int[,] array = GetArray(rows, columns, 2, 10);
 PrintArray(array);
 Console.WriteLine("----------------------- ");
@@ -51,8 +51,8 @@ void SortArray(int[,] inArray)
             }
         }
     }
-    PrintArray (inArray);
- }
+    PrintArray(inArray);
+}
 SortArray(array);
 
 
