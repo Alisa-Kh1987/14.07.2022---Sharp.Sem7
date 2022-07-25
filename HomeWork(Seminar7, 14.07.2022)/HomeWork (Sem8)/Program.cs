@@ -122,6 +122,7 @@ Console.WriteLine($"Индекс строки с наименьшей суммо
 
 //Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 Console.Clear();
+//я пробовала написать свою программу. Сначала не вышло. Переписывала уже сегодня. Если возможно, прошу дать комментарии по оптимизации
 
 int[,] GetArray(int m, int n, int minValue, int maxValue)
 {
@@ -166,13 +167,8 @@ int columnsB = Convert.ToInt32(Console.ReadLine());
 int[,] arrayB = GetArray(rowsB, columnsB, 0, 9);
 PrintArray(arrayB);
 
-int GetMultiplicationMatrix(int[,] arrayA, int[,] arrayB)
+int[,] GetMultiplicationMatrix(int[,] arrayA, int[,] arrayB)
 {
-    if (rowsA != columnsB)
-    {
-        Console.WriteLine("Матрицы умножать нельзя");
-    }
-
     int[,] arrayC = new int[arrayA.GetLength(0), arrayB.GetLength(1)];
     for (int i = 0; i < arrayA.GetLength(0); i++)
     {
@@ -186,7 +182,11 @@ int GetMultiplicationMatrix(int[,] arrayA, int[,] arrayB)
     }
     return arrayC;
 }
-*/
+Console.WriteLine("----------");
+PrintArray(GetMultiplicationMatrix(arrayА, arrayB));
+
+// Ваша программа:
+
 Console.Write("Введите количество строк 1 массива: ");
 int rowsA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите количество столбцов 1 массива: ");
@@ -249,3 +249,4 @@ int[,] GetMultiplicationMatrix(int[,] arrayA, int[,] arrayB)
     }
     return arrayC;
 }
+*/
